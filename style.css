@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(188, 211, 169);
+}
+
+.container{
+    background-color: #fff;
+    width: 90vmin;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(7, 35, 7, 0.2);
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+button{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px ;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    transition: box-shadow 0.15s linear;
+}
+
+button:hover{
+    box-shadow: 0 0 0 1px #5a7c67;
+}
+
+select{
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #5a7c67;
+}
+
+.options label,
+.options select{
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+
+input[type="color"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #5a7c67;
+}
+
+input[type="color"]::-moz-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #5a7c67;
+}
+
+#text-input{
+    margin-top: 10px;
+    border: 1px solid rgb(1, 66, 1);
+    padding: 20px;
+    height: 50vh;
+}
+
+.active{
+    background-color: aqua;
+}
